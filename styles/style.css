@@ -1,0 +1,285 @@
+/* general style of the website */
+/* this stylesheet is used in the index files */
+
+@font-face{
+    font-family:'Bitter';
+    src:url("/assets/Bitter Regular/Bitter Regular.ttf");
+}
+
+:root{
+    scrollbar-color:rgba(71, 61, 139, 0.9) #101010;
+    scroll-behavior:smooth;
+}
+body{
+    background-color:black;
+    color:#eee;
+    margin:1.88rem 1.88rem 1.88rem 1.88rem;
+    background-image:url("/assets/background-tile.PNG");
+    background-attachment:fixed;
+    background-size:5rem;
+    background-repeat:repeat;
+    font-family:'Bitter','Times New Roman', Times, serif;
+}
+
+@media (prefers-color-scheme:light){
+    :root{
+        scrollbar-color:rgb(195, 170, 255) #ddd;
+    }
+    body{
+        background-color:#dadada;
+        color:#101010;
+        background-image:url("/assets/background-tile-light.PNG");
+        a{color:purple;}
+        a:hover{background-color:rgba(221,126,221,0.5);}
+        nav{
+            background-color:#dddddd80;
+            backdrop-filter:blur(0.25rem);
+            border-color:rgb(179, 147, 255);
+        }
+        nav hgroup{
+            background-color:rgba(195, 170, 255,0.9);
+            border-bottom-color: rgb(179, 147, 255);
+        }
+        nav ul li a:hover{background-color:rgba(196, 170, 255, 0.541);}
+        article{
+            background-color:#dddddda0;
+            border-color:rgb(179, 147, 255);
+        }
+        article h1{
+            background-color:rgba(195, 170, 255,0.9);
+            border-bottom-color: rgb(179, 147, 255);
+        }
+        .gh::before{background-image:url('https://cdn-icons-png.flaticon.com/128/3128/3128308.png')}
+    }
+}
+
+@media screen and (max-width:800px){
+    body{
+        margin:0.125rem 0.5rem 0.125rem 0.5rem;
+        article{
+            margin-right:0;
+            margin-left:0;
+            margin-bottom:1.625rem;
+            margin-top:1.5rem;
+            padding-bottom:0.625rem;
+        }
+        .content-list{
+            flex-direction:column;
+            padding:0;
+        }
+        .content-list li a img{
+            height:12.5rem;
+            width:12.5rem;
+            &:hover{scale:none;}
+        }
+        .content-list-subtitle{width:auto;}
+    }
+}
+
+/* Flex settings */
+ul{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    padding:0.25rem;
+    gap:2.5rem;
+}
+.norml{
+    display:block;
+    margin-left:1.88rem;
+    line-height:1.5;
+}
+
+/* Header */
+header{
+    position:sticky;
+    top:0;
+    z-index:10000;
+}
+
+/* Navigation */
+nav ul{justify-content:center;}
+nav ul li{
+    margin:0.625rem;
+    list-style-type:none;
+    list-style-image:none;
+}
+nav ul li a{padding:0.25rem;}
+nav ul li a:hover{
+    text-decoration:underline;
+    background-color:rgba(71,61,139,0.5);
+    border-radius:1rem;
+}
+#current-page{
+    background-color:#66666633;
+    border-radius:1rem;
+    font-weight:bold;
+}
+#current-page:hover{
+    text-decoration:underline;
+    background-color:#66666666;
+}
+.window-collapsed{display:none;}
+nav{
+    border:0.1rem solid;
+    border-color:rgb(54,45,112);
+    border-radius:0.75rem;
+    box-shadow:0 0.25rem 0.25rem 0 rgba(0,0,0,0.2);
+    overflow:hidden;
+    background-color:#191919cb;
+    backdrop-filter:blur(0.15rem);
+}
+nav hgroup{
+    background-color:darkslateblue;
+    gap:0.25rem;
+    display:flex;
+    align-items:center;
+    justify-content:left;
+    border-bottom:0.1rem solid;
+    border-bottom-color:rgb(54,45,112);
+    margin:0;
+    padding-left:0.0625rem;
+    padding-right:0.1rem;padding-bottom:0.1rem;padding-top:0.1rem;
+}
+nav h1{
+    font-family:'Courier New', Courier, monospace;
+    font-size:1.2rem;
+    font-weight: normal;
+    text-decoration:none;
+    margin:0;
+    padding-bottom:0;
+    padding-top:0.25rem;padding-left:0.25rem;padding-right:0.5rem;
+}
+
+/* Contents list */
+.content-list{
+    display:flex;
+    flex-direction:row;
+    padding:0.25rem;
+    width:100%;
+    gap:2.5rem;
+    justify-content:center;
+}
+.content-list li{
+    margin:0.625rem;
+    list-style-type:none;
+    list-style-image:none;
+    text-align:center;
+}
+.content-list li a img{
+    border:0.2rem solid;
+    border-radius:2rem;
+    border-color:#101010;
+    box-shadow:0 0.25rem 0.25 rem 0 rgba(0,0,0,0.2);
+    height:7.5rem;
+    width:7.5rem;
+    transition-duration:0.5s;
+    &:hover{scale:1.25;}
+}
+.content-list a:hover{background:none;}
+.content-list-title{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:1.125rem;
+    margin-top:0.88rem;
+    margin-bottom:0.125rem;
+    text-decoration:underline;
+    font-weight:bold;
+    padding:0;
+    text-align:center;
+}
+.content-list-subtitle{
+    width:12.5rem;
+    text-align:center;
+    margin:0;
+    margin-top:0.5rem;
+}
+
+footer p{
+    text-align:center;
+}
+
+a{
+    color:plum;
+    text-decoration:none;
+}
+a:hover{
+    background-color:rgba(71,61,139,0.5);
+    border-radius:0.25rem;
+}
+
+main h1{
+    text-align:center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:2.125rem;
+    margin:2rem 0 1.125rem 0;
+    font-weight:bold;
+}
+
+main h1::before{
+    content:".·★";
+    margin-right:0.625rem;
+    font-weight:normal;
+}
+main h1::after{
+    content:"★·.";
+    margin-left:0.615rem;
+    font-weight:normal;
+}
+
+article{
+    border:0.1rem solid;
+    border-color:rgb(54,45,112);
+    border-radius:0.75rem;
+    box-shadow:0 0.25rem 0.25rem 0 rgba(0,0,0,0.2);
+    overflow:hidden;
+    padding-bottom:0.625rem;
+    margin-right:6.25rem;
+    margin-left:6.25rem;
+    margin-bottom:1.625rem;
+    margin-top:1.5rem;
+    background-color:#191919cb;
+    height:100%;
+}
+article h1{
+    background-color:rgba(71,61,139,0.9);
+    border-bottom:0.1rem solid;
+    border-bottom-color:rgba(54,45,112,1);
+    font-family:'Courier New', Courier, monospace;
+    font-size:1.2rem;
+    text-align:center;
+    padding:0.25rem;
+    margin:0;
+    font-weight:normal;
+    text-decoration:none;
+}
+article h1::before{
+    content:"*.☆";
+    margin-right:0.625rem;
+}
+article h1::after{
+    content:"☆.*";
+    margin-right:0.625rem;
+}
+article p{
+    padding:0.125rem 1rem 0.125rem 1rem;
+    margin-top:0.625rem;
+    margin-bottom:0.625rem;
+    font-family:'Bitter','Times New Roman', Times, serif;
+    font-size:0.925rem;
+    line-height:2;
+    text-align:justify;
+    hyphens:auto;
+}
+.insta,.lastfm,.gh{
+    &::before{
+        content:"";
+        display:inline-block;
+        height:1rem;width:1rem;
+        background-size:1rem 1rem;
+        background-repeat:no-repeat;
+        margin-right:0.125rem;
+    }
+}
+.insta::before{background-image:url('https://www.liege.be/fr/vivre-a-liege/enseignement/enseignement-communal-liegeois/images/instagram-logo-32x32px.png/@@images/image.png');}
+.lastfm::before{background-image:url('https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/last-fm-square-color-icon.png');}
+.gh::before{background-image:url('https://github.githubassets.com/favicons/favicon-dark.svg');}

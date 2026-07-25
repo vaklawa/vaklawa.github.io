@@ -1,0 +1,231 @@
+/* New stylesheet for blog posts */
+/* This mixes my blog-posts.css and window.css stylesheets.
+Its purpose is to get the same aesthetic and look but with a more semantic HTML
+(using less or no div tags) */
+
+@font-face{
+    font-family:'Journal';
+    src:url("/assets/JOURNAL.TTF");
+}
+@font-face{
+    font-family:'JP Hand Straight';
+    src:url("/assets/jp_hand_straight/JPHST.TTF");
+}
+@font-face{
+    font-family:'Bitter';
+    src:url("/assets/Bitter Regular/Bitter Regular.ttf");
+}
+
+:root{
+    scrollbar-color:rgba(71, 61, 139, 0.9) #101010;
+    scroll-behavior:smooth;
+}
+
+body{
+    background-color:black;
+    color:#dedede;
+    background-image:url("/assets/background-tile.PNG");
+    background-attachment:fixed;
+    background-size:5rem;
+    background-repeat:repeat;
+}
+
+@media screen and (max-width:800px){
+    body{
+        margin:0.125rem 0.5rem 0.125rem 0.5rem;
+        p{
+            font-size:0.825rem;
+            line-height:1.5;
+        }
+        a{font-size:1rem;}
+        ul{font-size:1rem;}
+        ul li{line-height:1.25;}
+        article{margin:0;}
+        .general-nav{
+            position:static;
+            width:auto;
+        }
+        a{text-decoration:none;}
+    }
+}
+
+@media (prefers-color-scheme:light){
+    :root{
+        scrollbar-color:rgb(195, 170, 255) #ddd;
+    }
+    body{
+        background-color:#dadada;
+        color:#101010;
+        background-image:url("/assets/background-tile-light.PNG");
+        a{color:purple;}
+        a:hover{background-color:rgba(221,126,221,0.5);}
+        #current-page{background-color:#cbcac1;}
+        #current-page:hover{background-color:rgb(195, 170, 255);}
+        nav{
+            background-color:#dddddd80;
+            backdrop-filter:blur(0.25rem);
+            border-color:rgb(179, 147, 255);
+        }
+        nav hgroup{
+            background-color:rgba(195, 170, 255,0.9);
+            border-bottom-color: rgb(179, 147, 255);
+        }
+        nav ul li a:hover{background-color:rgba(196, 170, 255, 0.541);}
+        article{
+            background-color:#dddddda0;
+            border-color:rgb(179, 147, 255);
+        }
+        article h1{
+            background-color:rgba(195, 170, 255,0.9);
+            border-bottom-color: rgb(179, 147, 255);
+        }
+        .gh::before{background-image:url('https://cdn-icons-png.flaticon.com/128/3128/3128308.png')}
+    }
+}
+
+/* Big title
+*/
+main h1{
+    text-decoration-skip-ink: auto;
+    text-decoration:underline;
+    text-align:center;
+    font-family:'Journal', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:3.125rem;
+    margin:1.5rem 0 1.25rem 0;
+    font-weight:bold;
+    scroll-margin-top:7.5rem;
+}
+
+/* Navigation window
+Place on top left corner & make its width fit the content */
+nav{
+    border:0.1rem solid;
+    border-color:rgb(54,45,112);
+    border-radius:0.75rem;
+    box-shadow:0 0.25rem 0.25rem 0 rgba(0,0,0,0.2);
+    overflow:hidden;
+    background-color:#191919cb;
+    backdrop-filter:blur(0.15rem);
+}
+.general-nav ul{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:2.5rem;
+    padding-right: 1.125rem;
+    padding-left:1.125rem;
+    list-style-type:none;
+}
+.general-nav ul li a{
+    padding:0.25rem;
+    text-decoration:none;
+    border-radius:1.125rem;
+    &:hover{background-color:rgba(232, 141, 255, 0.25);}
+}
+.general-nav{
+    width:fit-content;
+    position:fixed;
+    left:0.625rem;
+    top:0;
+}
+nav hgroup{
+    background-color:darkslateblue;
+    gap:0.25rem;
+    display:flex;
+    align-items:center;
+    justify-content:left;
+    border-bottom:0.1rem solid;
+    border-bottom-color:rgb(54,45,112);
+    margin:0;
+    padding-left:0.0625rem;
+    padding-right:0.1rem;padding-bottom:0.1rem;padding-top:0.1rem;
+}
+.general-nav h1{
+    font-family:'Courier New', Courier, monospace;
+    font-size:1.2rem;
+    font-weight: normal;
+    text-decoration:none;
+    margin:0;
+    padding-bottom:0;
+    padding-top:0.25rem;padding-left:0.25rem;padding-right:0.5rem;
+}
+
+/* Article
+(Previously: General Window) */
+article{
+    border:0.1rem solid;
+    border-color:rgb(54,45,112);
+    border-radius:0.75rem;
+    box-shadow:0 0.25rem 0.25rem 0 rgba(0,0,0,0.2);
+    overflow:hidden;
+    margin-right:10rem;
+    margin-left:10rem;
+    margin-bottom:1.5rem;
+    /*padding:0.625rem 1.2rem 0.625rem 1rem;*/
+    background-color:#252525b0;
+    height:100%;
+}
+article h1{
+    background-color:rgba(71,61,139,0.9);
+    border-bottom:0.1rem solid;
+    border-bottom-color:rgba(54,45,112,1);
+    font-family:'Courier New', Courier, monospace;
+    font-size:1.2rem;
+    text-align:center;
+    padding:0.25rem;
+    margin:0;
+    font-weight:normal;
+    text-decoration:none;
+}
+
+p{
+    text-align:justify;
+    hyphens:auto;
+    font-family:'Bitter', 'Times New Roman', Times, serif;
+    margin-left:1.2rem;margin-right:1rem;margin-top:0.625rem;margin-bottom:0.925rem;
+    line-height:1.25;
+}
+.first-paragraph{
+    margin-top:1.625rem;
+}
+.last-paragraph{
+    margin-bottom:1.25rem;
+}
+/*ul{
+    font-size:1.2rem;
+    list-style-type:symbols(cyclic "⋆");
+}*/
+ul li{line-height:1.25}
+a{
+    color:plum;
+    font-family:'Bitter','Times New Roman', Times, serif;
+    text-decoration:none;
+}
+a:hover{
+    background-color:rgba(71,61,139,0.5);
+    border-radius:0.25rem;
+}
+h2{
+    text-align:left;
+    font-family: 'JP Hand Straight', Georgia, 'Times New Roman', Times, serif;
+    font-size:1.75rem;
+    margin-top:1rem;
+    margin-bottom:0.88rem;
+    margin-right:1.2rem;margin-left:1rem;
+    scroll-margin-top:5.5rem;
+}
+
+.bottom-bar{
+    background-color:rgba(71,61,139,0.9);
+    border-top:0.1rem solid;
+    border-top-color:rgba(54,45,112,1);
+    height:1.85rem;
+}
+
+footer p{
+    text-align:center;
+    margin-right:0;
+    margin-left:0;
+    margin-bottom:1.5rem;
+    margin-top:1rem;
+}

@@ -1,0 +1,69 @@
+/* this stylesheet is used for styling stories text */
+
+@keyframes fade-in{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+body{
+    background-color:black;
+    color:#dedede;
+}
+
+@media screen and (max-width:800px){
+    body{
+        p{
+            font-size:1.125rem;
+            line-height:1.5;
+            margin:0 2.5rem 0 2.5rem;
+        }
+        h1{margin:0 1.5rem 1.5rem 1.5rem;}
+    }
+}
+@media (prefers-color-scheme:light){
+    body{
+        background-color:#dadada;
+        color:black;
+        a{color:purple;}
+    }
+}
+
+p{
+    font-family:'Times New Roman', Times, serif;
+    font-size:1.2rem;
+    text-indent:3.13rem;
+    text-align:justify;
+    hyphens:auto;
+    margin: 0 4.25rem 0 4.25rem;
+    line-height:1.5;
+    animation:fade-in;
+    animation-duration:0.5s;
+}
+p.first-paragraph{
+    text-indent:0;
+}
+p.last-paragraph{
+    margin-bottom:2.5rem;
+}
+p.dinkus{
+    text-align:center;
+    text-indent:0;
+    padding-top:1.2rem;
+    padding-bottom:1.2rem;
+}
+
+a{
+    color:plum;
+}
+
+h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:1.2rem;
+    font-weight:bold;
+    text-align:center;
+    margin-bottom:1.2rem;
+    animation:fade-in;
+    animation-duration:0.5s;
+}
+
+audio{display:none;}

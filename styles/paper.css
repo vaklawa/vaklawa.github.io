@@ -1,0 +1,144 @@
+/* "paper" layout for poems & stories */
+
+:root{
+    scrollbar-color:#ddd #101010;
+}
+
+@font-face{
+    font-family:'Bitter';
+    src:url("/assets/Bitter Regular/Bitter Regular.ttf")
+}
+
+@media screen and (max-width:800px){
+    body{
+        article{
+            background-image:none;
+            background:radial-gradient(#0f0f0f,#101010);
+            overflow:hidden;
+            size:content;
+            padding-bottom:2.5rem;
+            margin-right:0;
+            margin-left:0;
+        }
+        article p{
+            font-size:1rem;
+            line-height:1.75;
+        }
+        .general-nav{
+            position:static;
+            width:auto;
+        }
+        .general-nav ul{width:auto;}
+        a{text-decoration:none;}
+    }
+}
+@media (prefers-color-scheme: light){
+    body{
+        article{
+            background-color:#dadada;
+            background-image:url("/assets/paper-background-light.jpg");
+        }
+        nav{
+            background-color:#dddddd80;
+            backdrop-filter:blur(0.25rem);
+            border-color:rgb(179, 147, 255);
+        }
+        nav hgroup{
+            background-color:rgba(195, 170, 255,0.9);
+            border-bottom-color: rgb(179, 147, 255);
+        }
+    }
+    :root{
+        scrollbar-color:#bbb #ddd;
+    }
+}
+
+@media screen and (max-width:800px) and (prefers-color-scheme:light){
+    body{
+        article{
+            background-image:none;
+            background:radial-gradient(#eee,#dadada);
+            overflow:hidden;
+            size:content;
+            padding-bottom:2.5rem;
+        }
+    }
+}
+
+a{
+    font-family:'Bitter','Times New Roman', Times, serif;
+}
+
+header{
+    position:sticky;
+    top:0;
+    z-index:10000;
+}
+
+/* Navigation window
+Place on top left corner & make its width fit the content */
+nav{
+    border:0.1rem solid;
+    border-color:rgb(54,45,112);
+    border-radius:0.75rem;
+    box-shadow:0 0.25rem 0.25rem 0 rgba(0,0,0,0.2);
+    overflow:hidden;
+    background-color:#191919cb;
+    backdrop-filter:blur(0.15rem);
+}
+.general-nav ul{
+    width:13.25rem;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:1.5rem;
+    padding-right: 1.125rem;
+    padding-left:1.125rem;
+    list-style-type:none;
+}
+.general-nav ul li a{
+    padding:0.25rem;
+    text-decoration:none;
+    border-radius:1.125rem;
+    &:hover{background-color:rgba(232, 141, 255, 0.25);}
+}
+.general-nav{
+    width:fit-content;
+    position:fixed;
+    left:0.625rem;
+    top:0;
+}
+nav hgroup{
+    background-color:darkslateblue;
+    gap:0.25rem;
+    display:flex;
+    align-items:center;
+    justify-content:left;
+    border-bottom:0.1rem solid;
+    border-bottom-color:rgb(54,45,112);
+    margin:0;
+    padding-left:0.0625rem;
+    padding-right:0.1rem;padding-bottom:0.1rem;padding-top:0.1rem;
+}
+.general-nav h1{
+    font-family:'Courier New', Courier, monospace;
+    font-size:1.2rem;
+    font-weight: normal;
+    text-decoration:none;
+    margin:0;
+    padding-bottom:0;
+    padding-top:0.25rem;padding-left:0.25rem;padding-right:0.5rem;
+}
+
+article{
+    margin-left:12.5rem;
+    margin-right:12.5rem;
+    overflow:auto;
+    background-color:black;
+    background-image:url("/assets/paper-background.jpg");
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+article h1{padding-top:2.5rem;}
