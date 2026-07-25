@@ -30,13 +30,18 @@ body{
         article .default p.freestyle{
             font-size:1rem;
             text-wrap-mode:wrap;
+            line-height:1.5;
         }
         article .default p{
             font-size:1rem;
             margin-left:1.5rem;
             margin-right:1rem;
+            line-height:1.5;
         }
-        article .hand p{font-size:1.125rem;}
+        article .hand p{
+            font-size:1.125rem;
+            line-height:1.5;
+        }
     }
 }
 
