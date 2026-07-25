@@ -12,7 +12,7 @@ body{
 
 @media screen and (max-width:800px){
     body{
-        p{
+        article p{
             font-size:1rem;
             line-height:1.5;
             margin:0 1.25rem 0 1.25rem;
