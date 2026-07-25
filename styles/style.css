@@ -82,6 +82,7 @@ body{
         }
         .content-list-subtitle{width:auto;}
         ul{gap:0.25rem;}
+        .norml,.norml-nomark{margin-right:0.5rem;}
     }
 }
 
