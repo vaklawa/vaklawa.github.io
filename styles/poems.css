@@ -27,16 +27,16 @@ body{
 
 @media screen and (max-width:800px){
     body{
-        span p.freestyle{
+        article .default p.freestyle{
             font-size:1rem;
             text-wrap-mode:wrap;
         }
-        article span p{
+        article .default p{
             font-size:1rem;
             margin-left:1.5rem;
             margin-right:1rem;
         }
-        article span p.hand{font-size:1.125rem;}
+        article .hand p{font-size:1.125rem;}
     }
 }
 
