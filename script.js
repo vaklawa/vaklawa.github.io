@@ -41,7 +41,6 @@ function changeFont(){
         poemText.className="default";
     }
     paperSoundEffect2();
-
 }
 
 function hideAllWindows(){

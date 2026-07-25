@@ -8,9 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body onload="paperSoundEffect()">
-    <audio id="paper-sound">
-        <source src="/assets/215743__supersnd__turning-page-2.wav">
-    </audio>
+    <audio id="paper-sound"><source src="/assets/215743__supersnd__turning-page-2.wav"></audio>
+    <audio id="paper-sound2"><source src="/assets/428665__jomse__pickupbook2.wav"></audio>
     <header>
         <nav class="general-nav">
             <hgroup><button>...</button><h1>Opciones</h1></hgroup>
@@ -18,7 +17,7 @@
                 <li><a href="/poemas/#lista-es">Volver</a></li>
                 <li><a href="el-gato-negro.html">Anterior</a></li>
                 <li><a href="mi-alma-es-un-desierto.html">Siguiente</a></li>
-                <li><button>Cambiar estilo</button></li>
+                <li><button onclick="changeFont()">Cambiar estilo</button></li>
             </ul>
         </nav>
     </header>
@@ -34,5 +33,6 @@
         </article>
     </main>
     <footer></footer>
+    <script src="/script.js"></script>
 </body>
 </html>
