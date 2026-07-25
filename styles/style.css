@@ -58,6 +58,12 @@ body{
             border-bottom-color: rgb(179, 147, 255);
         }
         .gh::before{background-image:url('https://cdn-icons-png.flaticon.com/128/3128/3128308.png')}
+        button{
+            background-color:rgb(195, 170, 255);
+            color:black;
+            border-color:rgb(179, 147, 255);
+            &:hover{background-color:rgba(128, 0, 128, 0.5);}
+        }
     }
 }
 
@@ -298,3 +304,13 @@ article p{
 .insta::before{background-image:url('https://www.liege.be/fr/vivre-a-liege/enseignement/enseignement-communal-liegeois/images/instagram-logo-32x32px.png/@@images/image.png');}
 .lastfm::before{background-image:url('https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/last-fm-square-color-icon.png');}
 .gh::before{background-image:url('https://github.githubassets.com/favicons/favicon-dark.svg');}
+
+button{
+    background-color:darkslateblue;
+    color:#dedede;
+    border-radius:0.25rem;
+    border-color:rgb(54, 45, 112);
+    font-family:'Bitter','Times New Roman', Times, serif;
+    font-size:1rem;
+    &:hover{background-color:#dddddd50;}
+}
