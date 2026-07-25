@@ -47,6 +47,12 @@
             background-color:rgba(195, 170, 255,0.9);
             border-bottom-color: rgb(179, 147, 255);
         }
+        button{
+            background-color:rgb(195, 170, 255);
+            color:black;
+            border-color:rgb(179, 147, 255);
+        }
+        button:hover{background-color:rgba(128, 0, 128, 0.5);}
     }
     :root{
         scrollbar-color:#bbb #ddd;
@@ -142,3 +148,13 @@ article{
     background-size:cover;
 }
 article h1{padding-top:2.5rem;}
+
+button{
+    background-color:darkslateblue;
+    color:#dedede;
+    border-radius:0.25rem;
+    border-color:rgb(54, 45, 112);
+    font-family:'Bitter','Times New Roman', Times, serif;
+    font-size:1rem;
+    &:hover{background-color:#dddddd50;}
+}
