@@ -83,6 +83,9 @@ body{
     }
 }
 
+.general.nav .nav-window-content{display:flex;}
+.general-nav .nav-window-collapsed{display:none;}
+
 /* Big title
 */
 main h1{

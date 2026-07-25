@@ -71,6 +71,9 @@
     }
 }
 
+.general.nav .nav-window-content{display:flex;}
+.general-nav .nav-window-collapsed{display:none;}
+
 a{
     font-family:'Bitter','Times New Roman', Times, serif;
 }

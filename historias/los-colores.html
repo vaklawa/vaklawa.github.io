@@ -7,13 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body onload="paperSoundEffect()">
-    <audio id="paper-sound">
-        <source src="/assets/215743__supersnd__turning-page-2.wav">
-    </audio>
+    <audio id="paper-sound"><source src="/assets/215743__supersnd__turning-page-2.wav"></audio>
     <header>
         <nav class="general-nav">
-            <hgroup><button>...</button><h1>Opciones</h1></hgroup>
-            <ul>
+            <hgroup><button onclick="collapseNavWindow()">...</button><h1>Opciones</h1></hgroup>
+            <ul id="topnav" class="nav-window-content">
                 <li><a href="/historias/">Volver</a></li>
                 <li><a href="solsticio.html">Siguiente</a></li>
             </ul>
@@ -47,4 +45,5 @@
         </article>
     </main>
     <footer></footer>
+    <script src="/script.js"></script>
 </body>

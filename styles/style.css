@@ -140,7 +140,8 @@ nav ul li a:hover{
     text-decoration:underline;
     background-color:#66666666;
 }
-.window-collapsed{display:none;}
+.nav-window-content{display:flex;}
+.nav-window-collapsed{display:none;}
 nav{
     border:0.1rem solid;
     border-color:rgb(54,45,112);
