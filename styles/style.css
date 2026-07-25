@@ -73,7 +73,7 @@ body{
             &:hover{scale:none;}
         }
         .content-list-subtitle{width:auto;}
-        nav ul{gap:0.625rem;}
+        nav ul{gap:0.325rem;}
     }
 }
 
