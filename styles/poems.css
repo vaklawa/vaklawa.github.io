@@ -31,12 +31,12 @@ body{
             font-size:1rem;
             text-wrap-mode:wrap;
         }
-        span p{
+        article span p{
             font-size:1rem;
             margin-left:1.5rem;
             margin-right:1rem;
         }
-        span p.hand{font-size:1.125rem;}
+        article span p.hand{font-size:1.125rem;}
     }
 }
 
