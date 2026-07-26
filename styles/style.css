@@ -49,11 +49,11 @@ body{
             border-bottom-color: rgb(179, 147, 255);
         }
         nav ul li a:hover{background-color:rgba(196, 170, 255, 0.541);}
-        article{
+        article, section{
             background-color:#dddddda0;
             border-color:rgb(179, 147, 255);
         }
-        article h1{
+        article h1, section h1{
             background-color:rgba(195, 170, 255,0.9);
             border-bottom-color: rgb(179, 147, 255);
         }
@@ -70,7 +70,7 @@ body{
 @media screen and (max-width:800px){
     body{
         margin:0.125rem 0.5rem 0.125rem 0.5rem;
-        article{
+        article, section{
             margin-right:0;
             margin-left:0;
             margin-bottom:1.625rem;
@@ -248,7 +248,7 @@ main h1::after{
     font-weight:normal;
 }
 
-article{
+article, section{
     border:0.1rem solid;
     border-color:rgb(54,45,112);
     border-radius:0.75rem;
@@ -262,7 +262,7 @@ article{
     background-color:#191919cb;
     height:100%;
 }
-article h1{
+article h1, section h1{
     background-color:rgba(71,61,139,0.9);
     border-bottom:0.1rem solid;
     border-bottom-color:rgba(54,45,112,1);
@@ -273,16 +273,16 @@ article h1{
     margin:0;
     font-weight:normal;
     text-decoration:none;
+    &::before{
+        content:"*.☆";
+        margin-right:0.625rem;
+    }
+    &::after{
+        content:"☆.*";
+        margin-right:0.625rem;
+    }
 }
-article h1::before{
-    content:"*.☆";
-    margin-right:0.625rem;
-}
-article h1::after{
-    content:"☆.*";
-    margin-right:0.625rem;
-}
-article p{
+article p, section p{
     padding:0.125rem 1rem 0.125rem 1rem;
     margin-top:0.625rem;
     margin-bottom:0.625rem;
