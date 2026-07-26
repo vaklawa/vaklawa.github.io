@@ -232,3 +232,8 @@ footer p{
     margin-bottom:1.5rem;
     margin-top:1rem;
 }
+nav hgroup button{
+    font-size:1.5rem;
+    padding:0 0.5rem 0.125rem 0.5rem;
+    border-radius:0.5rem;
+}

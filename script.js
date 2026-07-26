@@ -1,14 +1,22 @@
 function collapseNavWindow(){
     let element=document.getElementById("topnav");
     if(element.className==="nav-window-content"){
+        console.log('class name is nav-window-content. collapsing navwindow');
         element.className="nav-window-collapsed";
     }
     else{
-        element.className="nav-window-content";
+        console.log('window is already collapsed');
     }
 }
 function expandNavWindow(){
-    document.getElementById("topnav").className="nav-window-content";
+    let element=document.getElementById("topnav");
+    if(element.className==="nav-window-collapsed"){
+        console.log('class name is nav-window-collapsed. expanding navwindow');
+        element.className="nav-window-content";
+    }
+    else{
+        console.log('window is already expanded');
+    }
 }
 
 /* toggles a specific window */
