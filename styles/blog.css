@@ -190,8 +190,9 @@ for blog posts that have sub-sections. */
 .index ul{
     margin:0.625rem 1.2rem 0.625rem 1rem;
     padding-left:0.625rem;
-    font-size:1.125rem;
+    font-size:1rem;
 }
+.index ul li{line-height:1.625;}
 
 /* Article
 (Previously: General Window) */
