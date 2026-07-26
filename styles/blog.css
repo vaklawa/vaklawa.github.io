@@ -97,6 +97,13 @@ body{
 .general.nav .nav-window-content{display:flex;}
 .general-nav .nav-window-collapsed{display:none;}
 
+/* Header */
+header{
+    position:sticky;
+    top:0;
+    z-index:10000;
+}
+
 /* Big title
 */
 main h1{
