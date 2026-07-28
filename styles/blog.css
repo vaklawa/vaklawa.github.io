@@ -77,11 +77,11 @@ body{
             border-bottom-color: rgb(179, 147, 255);
         }
         article{
-            background-color:#dddddda0;
+            background-color:#ddddddea;
             border-color:rgb(179, 147, 255);
         }
         article h1{
-            background-color:rgba(195, 170, 255,0.9);
+            background-color:rgba(195, 170, 255);
             border-bottom-color: rgb(179, 147, 255);
         }
         .gh::before{background-image:url('https://cdn-icons-png.flaticon.com/128/3128/3128308.png')}
@@ -215,11 +215,11 @@ article{
     margin-left:10rem;
     margin-bottom:1.5rem;
     /*padding:0.625rem 1.2rem 0.625rem 1rem;*/
-    background-color:#252525b0;
+    background-color:#191919eb;
     height:100%;
 }
 article h1{
-    background-color:rgba(71,61,139,0.9);
+    background-color:rgb(71, 61, 139);
     border-bottom:0.1rem solid;
     border-bottom-color:rgba(54,45,112,1);
     font-family:'Courier New', Courier, monospace;
