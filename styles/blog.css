@@ -41,6 +41,7 @@ body{
         ul{font-size:1rem;}
         ul li{line-height:1.25;}
         article{margin:0;}
+        section{margin-right:0;margin-left:0;}
         .general-nav{
             position:static;
             width:auto;
@@ -67,7 +68,7 @@ body{
             backdrop-filter:blur(0.25rem);
             border-color:rgb(179, 147, 255);
         }
-        nav hgroup{
+        nav hgroup, section hgroup{
             background-color:rgba(195, 170, 255,0.9);
             border-bottom-color: rgb(179, 147, 255);
         }
@@ -76,7 +77,7 @@ body{
             background-color:rgba(195, 170, 255,0.9);
             border-bottom-color: rgb(179, 147, 255);
         }
-        article{
+        article, section{
             background-color:#ddddddea;
             border-color:rgb(179, 147, 255);
         }
@@ -90,6 +91,10 @@ body{
             color:black;
             border-color:rgb(179, 147, 255);
             &:hover{background-color:rgba(128, 0, 128, 0.5);}
+        }
+        .close-button{
+            background-color:rgba(255, 17, 17, 0.875);
+            &:hover{background-color:rgba(255, 0, 0, 0.375);}
         }
     }
 }
@@ -149,19 +154,20 @@ nav{
     left:0.625rem;
     top:0;
 }
-nav hgroup{
+nav hgroup, section hgroup{
     background-color:darkslateblue;
     gap:0.25rem;
     display:flex;
     align-items:center;
-    justify-content:left;
     border-bottom:0.1rem solid;
     border-bottom-color:rgb(54,45,112);
     margin:0;
     padding-left:0.0625rem;
     padding-right:0.1rem;padding-bottom:0.1rem;padding-top:0.1rem;
 }
-.general-nav h1{
+nav hgroup{justify-content:left;}
+section hgroup{justify-content:space-between;}
+.general-nav h1, section h1{
     font-family:'Courier New', Courier, monospace;
     font-size:1.2rem;
     font-weight: normal;
@@ -170,6 +176,7 @@ nav hgroup{
     padding-bottom:0;
     padding-top:0.25rem;padding-left:0.25rem;padding-right:0.5rem;
 }
+section h1{margin-left:1.25rem;}
 
 /* Index */
 /* This window is used as an index
@@ -205,7 +212,7 @@ for blog posts that have sub-sections. */
 
 /* Article
 (Previously: General Window) */
-article{
+article, section{
     border:0.1rem solid;
     border-color:rgb(54,45,112);
     border-radius:0.75rem;
@@ -302,8 +309,17 @@ button{
     font-size:1rem;
     &:hover{background-color:#dddddd50;}
 }
-nav hgroup button{
+nav hgroup button, section hgroup button{
     font-size:1.5rem;
     padding:0 0.5rem 0.125rem 0.5rem;
     border-radius:0.5rem;
 }
+.close-button{
+    background-color:rgba(139, 0, 0, 0.832);
+    &::before{
+        display:inline-block;
+        content:'x';
+    }
+    &:hover{background-color:rgba(139, 0, 0, 0.5);}
+}
+.closed{display:none;}

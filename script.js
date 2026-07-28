@@ -19,6 +19,12 @@ function expandNavWindow(){
         console.log('window is already expanded');
     }
 }
+function closeWindow(windowName){
+    let element=document.getElementById(windowName);
+    console.log('closing window:');
+    console.log(windowName);
+    element.className="closed";
+}
 
 /* switches between default font (Times New Roman) and JP Hand */
 function changeFont(){
