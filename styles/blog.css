@@ -16,6 +16,11 @@ Its purpose is to get the same aesthetic and look but with a more semantic HTML
     src:url("/assets/Bitter Regular/Bitter Regular.ttf");
 }
 
+.index ul li::marker{
+    content:'⭑';
+    font-size:1.25rem;
+}
+
 :root{
     scrollbar-color:rgba(71, 61, 139, 0.9) #101010;
     scroll-behavior:smooth;
@@ -225,6 +230,7 @@ article, section{
     background-color:#191919eb;
     height:100%;
 }
+.warning{background-color:#191015eb;}
 article h1{
     background-color:rgb(71, 61, 139);
     border-bottom:0.1rem solid;
