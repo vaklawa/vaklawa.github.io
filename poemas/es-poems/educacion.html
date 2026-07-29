@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link rel="stylesheet" href="/styles/paper.css">
+        <link rel="stylesheet" href="/styles/poems.css">
+        <title>Poemas | Educación</title>
+        <link rel="icon" href="/assets/poem-icon.ico">
+        <meta name="description" content="A poem titled 'Educación'.">
+        <meta name="author" content="Ame (https://github.com/vaklawa)">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body onload="paperSoundEffect()">
+        <audio id="paper-sound"><source src="/assets/215743__supersnd__turning-page-2.wav"></audio>
+        <audio id="paper-sound2"><source src="/assets/428665__jomse__pickupbook2.wav"></audio>
+        <header>
+            <nav class="general-nav">
+                <hgroup><button onclick="collapseNavWindow()">_</button><button onclick="expandNavWindow()">□</button><h1>Opciones</h1></hgroup>
+                <ul id="topnav" class="nav-window-content">
+                    <li><a href="/poemas/#lista-es">Volver</a></li>
+                    <li><a href="despues-de-la-fiesta.html">Anterior</a></li>
+                    <li><a href="el-accidente.html">Siguiente</a></li>
+                    <li><button onclick="changeFont()">Cambiar estilo</button></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <span id="poem" class="default">
+                    <h1>Educación</h1>
+                    <p>seca, <br>seca hasta <br>el fondo, <br>sin una gota <br>me quedaré;</p>
+                    <p>la letra <br>con sangre <br>entra, y <br>los créditos <br>también.</p>
+                </span>
+            </article>
+        </main>
+        <footer></footer>
+        <script src="/script.js"></script>
+    </body>
+</html>
