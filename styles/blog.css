@@ -101,7 +101,7 @@ body{
             background-color:rgba(255, 17, 17, 0.875);
             &:hover{background-color:rgba(255, 0, 0, 0.375);}
         }
-        .warning{background-color: rgb(225, 155, 198, 0.95);/*#ee4445eb*/;}
+        .warning{background-color:#ee4445eb;}
     }
 }
 
