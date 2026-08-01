@@ -182,7 +182,7 @@ section hgroup{justify-content:space-between;}
     padding-bottom:0;
     padding-top:0.25rem;padding-left:0.25rem;padding-right:0.5rem;
 }
-section h1{margin-left:1.25rem;}
+section h1, article section h1{margin-left:1.25rem;border:none;}
 
 /* Index */
 /* This window is used as an index
@@ -231,6 +231,7 @@ article, section{
     background-color:#191919eb;
     height:100%;
 }
+article section{margin-left:1.2rem;margin-right:1.2rem;}
 .warning{background-color:#191015eb;}
 article h1{
     background-color:rgb(71, 61, 139);
