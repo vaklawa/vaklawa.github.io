@@ -45,7 +45,7 @@ body{
         a{font-size:1rem;}
         ul{font-size:1rem;}
         ul li{line-height:1.25;}
-        article{margin:0;}
+        article{margin-right:0;margin-left:0;margin-top:1.625rem;}
         section{margin-right:0;margin-left:0;}
         .general-nav{
             position:static;
@@ -157,7 +157,7 @@ nav{
 .general-nav{
     width:fit-content;
     position:fixed;
-    left:0.625rem;
+    left:0.0625rem;
     top:0;
 }
 nav hgroup, section hgroup{
