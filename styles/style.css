@@ -13,6 +13,10 @@
     font-family:'Bitter';
     src:url("/assets/Bitter Regular/Bitter Regular.ttf");
 }
+@font-face{
+    font-family:'JP Hand';
+    src:url("/assets/jp_hand_straight/JPHST.TTF");
+}
 
 :root{
     scrollbar-color:rgba(71, 61, 139, 0.9) #101010;
@@ -231,8 +235,8 @@ a:hover{
 
 main h1{
     text-align:center;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:2.125rem;
+    font-family:'JP Hand';
+    font-size:3.25rem;
     margin:2rem 0 1.125rem 0;
     font-weight:bold;
 }
