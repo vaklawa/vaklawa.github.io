@@ -44,7 +44,7 @@ body{
         a{color:purple;}
         a:hover{background-color:rgba(221,126,221,0.5);}
         nav{
-            background-color:#dddddd80;
+            background-color:#f2f2f290;
             backdrop-filter:blur(0.25rem);
             border-color:rgb(179, 147, 255);
         }
@@ -54,7 +54,8 @@ body{
         }
         nav ul li a:hover{background-color:rgba(196, 170, 255, 0.541);}
         article, section{
-            background-color:#dddddd;
+            background-color:#f0f0f0aa;
+            backdrop-filter:blur(0.5rem);
             border-color:rgb(179, 147, 255);
         }
         article h1, section h1{

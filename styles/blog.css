@@ -69,7 +69,7 @@ body{
         #current-page{background-color:#cbcac1;}
         #current-page:hover{background-color:rgb(195, 170, 255);}
         nav{
-            background-color:#dddddd80;
+            background-color:#f2f2f290;
             backdrop-filter:blur(0.25rem);
             border-color:rgb(179, 147, 255);
         }
@@ -83,7 +83,7 @@ body{
             border-bottom-color: rgb(179, 147, 255);
         }
         article, section{
-            background-color:#ddddddea;
+            background-color:#f0f0f0;
             border-color:rgb(179, 147, 255);
         }
         article h1{
