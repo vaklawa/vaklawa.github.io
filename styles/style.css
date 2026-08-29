@@ -69,7 +69,7 @@ body{
 
 @media screen and (max-width:800px){
     body{
-        margin:0.125rem 0.5rem 0.125rem 0.5rem;
+        margin:0.125rem 0 0.125rem 0;
         article, section{
             margin-right:0;
             margin-left:0;
