@@ -297,7 +297,7 @@ article p, section p{
     text-align:justify;
     hyphens:auto;
 }
-.insta,.lastfm,.gh{
+.insta,.lastfm,.gh,.mail{
     &::before{
         content:"";
         display:inline-block;
@@ -310,6 +310,7 @@ article p, section p{
 .insta::before{background-image:url('https://www.liege.be/fr/vivre-a-liege/enseignement/enseignement-communal-liegeois/images/instagram-logo-32x32px.png/@@images/image.png');}
 .lastfm::before{background-image:url('https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/last-fm-square-color-icon.png');}
 .gh::before{background-image:url('https://github.githubassets.com/favicons/favicon-dark.svg');}
+.mail::before{background-image:url('https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Gmail_icon_%282026%29.svg/960px-Gmail_icon_%282026%29.svg.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=thumbnail');}
 
 button{
     background-color:darkslateblue;
