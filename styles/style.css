@@ -237,20 +237,9 @@ a:hover{
 main h1{
     text-align:center;
     font-family:'JP Hand';
-    font-size:3.25rem;
+    font-size:4.125rem;
     margin:2rem 0 1.125rem 0;
     font-weight:bold;
-}
-
-main h1::before{
-    content:".·★";
-    margin-right:0.625rem;
-    font-weight:normal;
-}
-main h1::after{
-    content:"★·.";
-    margin-left:0.615rem;
-    font-weight:normal;
 }
 
 article, section{
