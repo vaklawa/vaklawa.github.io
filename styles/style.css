@@ -273,7 +273,7 @@ article h1, section h1{
     }
     &::after{
         content:"☆.*";
-        margin-right:0.625rem;
+        margin-left:0.625rem;
     }
 }
 article p, section p{
