@@ -250,12 +250,13 @@ article h1{
     text-decoration:none;
 }
 
-p{
+p, ul{
     text-align:justify;
     hyphens:auto;
     font-family:'Bitter', 'Times New Roman', Times, serif;
     margin-left:1.2rem;margin-right:1rem;margin-top:0.625rem;margin-bottom:0.925rem;
     line-height:2;
+    list-style-type:symbols(cyclic "⋆");
 }
 .first-paragraph{
     margin-top:1.625rem;
@@ -263,10 +264,6 @@ p{
 .last-paragraph{
     margin-bottom:1.25rem;
 }
-/*ul{
-    font-size:1.2rem;
-    list-style-type:symbols(cyclic "⋆");
-}*/
 ul li{line-height:1.25}
 a{
     color:plum;
