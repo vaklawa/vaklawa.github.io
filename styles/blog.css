@@ -256,4 +256,8 @@ blockquote{
     border-left:0.165rem solid;
     border-left-color:darkslateblue;
     background-color:#10101050;
+    font-style:italic;
+}
+.book-quote{
+    font-family:'Times New Roman', Times, serif;
 }
