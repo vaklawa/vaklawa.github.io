@@ -38,10 +38,8 @@ body{
 @media screen and (max-width:800px){
     body{
         margin:0.125rem 0rem 0.125rem 0rem;
-        p{font-size:1rem;}
+        p, ul{font-size:1rem;}
         a{font-size:1rem;}
-        ul{font-size:1rem;}
-        ul li{line-height:1.25;}
         article{margin-right:0;margin-left:0;margin-top:1.625rem;}
         section{margin-right:0;margin-left:0;}
         a{text-decoration:none;}
@@ -180,7 +178,6 @@ p, ul{
 .last-paragraph{
     margin-bottom:1.25rem;
 }
-ul li{line-height:1.25}
 a{
     color:plum;
     font-family:'Bitter','Times New Roman', Times, serif;
