@@ -255,3 +255,15 @@ blockquote{
 .book-quote{
     font-family:'Times New Roman', Times, serif;
 }
+
+hr{
+    border:none;
+    height:auto;
+    margin-top:1.625rem;
+    margin-bottom:1.625rem;
+    text-align:center;
+    &::after{
+        content:'. ݁₊ ⊹ . ݁ ✧ ⋆* . ⟡ . *⋆ ✧ ݁ . ⊹ ₊ ݁.';
+        letter-spacing:0.25rem;
+    }
+}
