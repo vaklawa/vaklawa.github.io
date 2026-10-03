@@ -27,6 +27,7 @@ body{
 
 @media screen and (max-width:800px){
     body{
+        .general-nav ul{max-width:none;}
         article .default p.freestyle{
             font-size:1.125rem;
             text-wrap-mode:wrap;
@@ -45,6 +46,9 @@ body{
         }
     }
 }
+
+/* Prevent navigation window from partially covering the text. */
+.general-nav ul{max-width:12.5rem;}
 
 p{
     font-family:'Times New Roman', Times, serif;
