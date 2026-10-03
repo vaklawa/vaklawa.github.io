@@ -1,0 +1,133 @@
+/* This stylesheet is used for the navigation windows in content (blog posts, poems, etc). */
+
+@font-face{
+    font-family:'Bitter';
+    src:url("/assets/Bitter Regular/Bitter Regular.ttf");
+}
+
+@media screen and (max-width:800px){
+    body{
+        .general-nav{
+            position:static;
+            width:auto;
+        }
+        .index{display:none;}
+    }
+}
+
+@media screen and (prefers-color-scheme:light){
+    body{
+        nav{
+            background-color:#f2f2f290;
+            backdrop-filter:blur(0.25rem);
+            border-color:rgb(179, 147, 255);
+        }
+        nav hgroup{
+            background-color:rgba(195, 170, 255,0.9);
+            border-bottom-color: rgb(179, 147, 255);
+        }
+        nav ul li a:hover{background-color:rgba(196, 170, 255, 0.541);}
+        .index h1{
+            background-color:rgba(195, 170, 255,0.9);
+            border-bottom-color: rgb(179, 147, 255);
+        }
+    }
+}
+
+/* General navigation window.
+Place on top left corner & fix width. */
+.general-nav{
+    width:fit-content;
+    position:fixed;
+    left:0.0625rem;
+    top:0;
+}
+.general-nav .nav-window-collapsed{display:none;}
+.general.nav .nav-window-content{display:flex;}
+.general-nav h1{
+    font-family:'Courier New', Courier, monospace;
+    font-size:1.2rem;
+    font-weight: normal;
+    text-decoration:none;
+    margin:0;
+    padding-bottom:0;
+    padding-top:0.25rem;padding-left:0.25rem;padding-right:0.5rem;
+}
+.general-nav ul{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:2.5rem;
+    padding-right:1.125rem;
+    padding-left:1.125rem;
+    margin-right:0;
+    margin-left:0;
+    margin-top:1.25rem;
+    margin-bottom:1rem;
+    list-style-type:none;
+}
+.general-nav ul li a{
+    padding:0.25rem;
+    text-decoration:none;
+    border-radius:1.125rem;
+    &:hover{background-color:rgba(232, 141, 255, 0.25);}
+}
+
+/* Index. */
+/* This window is used as an index for blog posts that have sub-sections. */
+.index{
+    margin:0;
+    width:10rem;
+    position:fixed;
+    right:0.25rem;
+    top:0;
+    overflow:hidden;
+    margin-bottom:1.5rem;
+}
+.index h1{
+    background-color:rgba(71,61,139,0.9);
+    border-bottom:0.1rem solid;
+    border-bottom-color:rgba(54,45,112,1);
+    font-family:'Courier New', Courier, monospace;
+    font-size:1.2rem;
+    font-weight:normal;
+    text-align:center;
+    padding:0.25rem;
+    margin:0;
+}
+.index ul{
+    margin:0.625rem 0.25rem 0.625rem 1rem;
+    padding-left:0.625rem;
+    font-size:1rem;
+    height:85vh;
+    overflow:auto;
+}
+.index ul li{line-height:1.625;}
+
+/* nav tag settings. */
+nav{
+    border:0.1rem solid;
+    border-color:rgb(54,45,112);
+    border-radius:0.75rem;
+    box-shadow:0 0.25rem 0.25rem 0 rgba(0,0,0,0.2);
+    overflow:hidden;
+    background-color:#191919cb;
+    backdrop-filter:blur(0.15rem);
+}
+nav hgroup{
+    background-color:darkslateblue;
+    gap:0.25rem;
+    display:flex;
+    align-items:center;
+    border-bottom:0.1rem solid;
+    border-bottom-color:rgb(54,45,112);
+    margin:0;
+    padding-left:0.0625rem;
+    padding-right:0.1rem;padding-bottom:0.1rem;padding-top:0.1rem;
+    justify-content:left;
+}
+nav hgroup button{
+    font-size:1.5rem;
+    padding:0 0.5rem 0.125rem 0.5rem;
+    border-radius:0.5rem;
+}

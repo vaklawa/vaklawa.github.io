@@ -47,12 +47,7 @@ body{
         ul li{line-height:1.25;}
         article{margin-right:0;margin-left:0;margin-top:1.625rem;}
         section{margin-right:0;margin-left:0;}
-        .general-nav{
-            position:static;
-            width:auto;
-        }
         a{text-decoration:none;}
-        .index{display:none;}
     }
 }
 
@@ -68,17 +63,8 @@ body{
         a:hover{background-color:rgba(221,126,221,0.5);}
         #current-page{background-color:#cbcac1;}
         #current-page:hover{background-color:rgb(195, 170, 255);}
-        nav{
-            background-color:#f2f2f290;
-            backdrop-filter:blur(0.25rem);
-            border-color:rgb(179, 147, 255);
-        }
-        nav hgroup, section hgroup{
-            background-color:rgba(195, 170, 255,0.9);
-            border-bottom-color: rgb(179, 147, 255);
-        }
-        nav ul li a:hover{background-color:rgba(196, 170, 255, 0.541);}
-        .index h1{
+        
+        section hgroup{
             background-color:rgba(195, 170, 255,0.9);
             border-bottom-color: rgb(179, 147, 255);
         }
@@ -109,9 +95,6 @@ body{
     }
 }
 
-.general.nav .nav-window-content{display:flex;}
-.general-nav .nav-window-collapsed{display:none;}
-
 /* Header */
 header{
     position:sticky;
@@ -132,39 +115,7 @@ main h1{
     scroll-margin-top:7.5rem;
 }
 
-/* Navigation window
-Place on top left corner & make its width fit the content */
-nav{
-    border:0.1rem solid;
-    border-color:rgb(54,45,112);
-    border-radius:0.75rem;
-    box-shadow:0 0.25rem 0.25rem 0 rgba(0,0,0,0.2);
-    overflow:hidden;
-    background-color:#191919cb;
-    backdrop-filter:blur(0.15rem);
-}
-.general-nav ul{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:2.5rem;
-    padding-right: 1.125rem;
-    padding-left:1.125rem;
-    list-style-type:none;
-}
-.general-nav ul li a{
-    padding:0.25rem;
-    text-decoration:none;
-    border-radius:1.125rem;
-    &:hover{background-color:rgba(232, 141, 255, 0.25);}
-}
-.general-nav{
-    width:fit-content;
-    position:fixed;
-    left:0.0625rem;
-    top:0;
-}
-nav hgroup, section hgroup{
+section hgroup{
     background-color:darkslateblue;
     gap:0.25rem;
     display:flex;
@@ -175,9 +126,9 @@ nav hgroup, section hgroup{
     padding-left:0.0625rem;
     padding-right:0.1rem;padding-bottom:0.1rem;padding-top:0.1rem;
 }
-nav hgroup{justify-content:left;}
+
 section hgroup{justify-content:space-between;}
-.general-nav h1, section h1{
+section h1{
     font-family:'Courier New', Courier, monospace;
     font-size:1.2rem;
     font-weight: normal;
@@ -187,38 +138,6 @@ section hgroup{justify-content:space-between;}
     padding-top:0.25rem;padding-left:0.25rem;padding-right:0.5rem;
 }
 section h1, article section h1{margin-left:1.25rem;border:none;}
-
-/* Index */
-/* This window is used as an index
-for blog posts that have sub-sections. */
-.index{
-    margin:0;
-    width:10rem;
-    position:fixed;
-    right:0.25rem;
-    top:0;
-    overflow:hidden;
-    margin-bottom:1.5rem;
-}
-.index h1{
-    background-color:rgba(71,61,139,0.9);
-    border-bottom:0.1rem solid;
-    border-bottom-color:rgba(54,45,112,1);
-    font-family:'Courier New', Courier, monospace;
-    font-size:1.2rem;
-    font-weight:normal;
-    text-align:center;
-    padding:0.25rem;
-    margin:0;
-}
-.index ul{
-    margin:0.625rem 0.25rem 0.625rem 1rem;
-    padding-left:0.625rem;
-    font-size:1rem;
-    height:85vh;
-    overflow:auto;
-}
-.index ul li{line-height:1.625;}
 
 /* Article
 (Previously: General Window) */
@@ -318,7 +237,7 @@ button{
     font-size:1rem;
     &:hover{background-color:#dddddd50;}
 }
-nav hgroup button, section hgroup button{
+section hgroup button{
     font-size:1.5rem;
     padding:0 0.5rem 0.125rem 0.5rem;
     border-radius:0.5rem;

@@ -71,9 +71,6 @@
     }
 }
 
-.general.nav .nav-window-content{display:flex;}
-.general-nav .nav-window-collapsed{display:none;}
-
 a{
     font-family:'Bitter','Times New Roman', Times, serif;
 }
@@ -82,61 +79,6 @@ header{
     position:sticky;
     top:0;
     z-index:10000;
-}
-
-/* Navigation window
-Place on top left corner & make its width fit the content */
-nav{
-    border:0.1rem solid;
-    border-color:rgb(54,45,112);
-    border-radius:0.75rem;
-    box-shadow:0 0.25rem 0.25rem 0 rgba(0,0,0,0.2);
-    overflow:hidden;
-    background-color:#191919cb;
-    backdrop-filter:blur(0.15rem);
-}
-.general-nav ul{
-    width:13.25rem;
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:1.5rem;
-    padding-right: 1.125rem;
-    padding-left:1.125rem;
-    list-style-type:none;
-}
-.general-nav ul li a{
-    padding:0.25rem;
-    text-decoration:none;
-    border-radius:1.125rem;
-    &:hover{background-color:rgba(232, 141, 255, 0.25);}
-}
-.general-nav{
-    width:fit-content;
-    position:fixed;
-    left:0.625rem;
-    top:0;
-}
-nav hgroup{
-    background-color:darkslateblue;
-    gap:0.25rem;
-    display:flex;
-    align-items:center;
-    justify-content:left;
-    border-bottom:0.1rem solid;
-    border-bottom-color:rgb(54,45,112);
-    margin:0;
-    padding-left:0.0625rem;
-    padding-right:0.1rem;padding-bottom:0.1rem;padding-top:0.1rem;
-}
-.general-nav h1{
-    font-family:'Courier New', Courier, monospace;
-    font-size:1.2rem;
-    font-weight: normal;
-    text-decoration:none;
-    margin:0;
-    padding-bottom:0;
-    padding-top:0.25rem;padding-left:0.25rem;padding-right:0.5rem;
 }
 
 article{
@@ -160,9 +102,4 @@ button{
     font-family:'Bitter','Times New Roman', Times, serif;
     font-size:1rem;
     &:hover{background-color:#dddddd50;}
-}
-nav hgroup button{
-    font-size:1.5rem;
-    padding:0 0.5rem 0.125rem 0.5rem;
-    border-radius:0.5rem;
 }
