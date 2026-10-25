@@ -241,3 +241,12 @@ hr{
         letter-spacing:0.25rem;
     }
 }
+footer{
+    background-color:#19191988;
+    border-radius:0.75rem;
+    backdrop-filter:blur(0.25rem);
+    padding-top:0.625rem;
+    padding-bottom:0.625rem;
+    padding-right:0.25rem;
+    padding-left:0.25rem;
+}

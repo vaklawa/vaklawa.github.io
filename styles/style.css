@@ -265,3 +265,12 @@ nav hgroup button{
     padding:0 0.5rem 0.125rem 0.5rem;
     border-radius:0.5rem;
 }
+footer{
+    background-color:#19191988;
+    border-radius:0.75rem;
+    backdrop-filter:blur(0.25rem);
+    padding-top:0.625rem;
+    padding-bottom:0.625rem;
+    padding-right:0.25rem;
+    padding-left:0.25rem;
+}
