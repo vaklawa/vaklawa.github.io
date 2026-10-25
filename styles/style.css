@@ -87,7 +87,7 @@ body{
         }
         .content-list-subtitle{width:auto;}
         ul{gap:0.25rem;}
-        .norml,.norml-nomark{margin-right:0.5rem;}
+        .norml,.norml-nomark{margin-right:1.125rem;}
     }
 }
 ul{
@@ -100,12 +100,12 @@ ul{
 .norml{
     display:block;
     margin-left:1.88rem;
-    line-height:1.5;
+    line-height:1.75;
 }
 .norml-nomarker{
     display:block;
     margin-left:1.88rem;
-    line-height:1.5;
+    line-height:1.75;
 }
 header{
     position:sticky;
