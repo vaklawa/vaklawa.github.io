@@ -9,9 +9,9 @@ body{
 @media screen and (max-width:800px){
     body{
         article p{
-            font-size:1rem;
-            line-height:1.5;
-            margin:0 0.925rem 0 0.925rem;
+            font-size:1.25rem;
+            line-height:1.75;
+            margin:0 2.0625rem 0 2.0625rem;
         }
         h1{margin:0 1.5rem 1.5rem 1.5rem;}
     }
@@ -30,7 +30,7 @@ p{
     text-align:justify;
     hyphens:auto;
     margin: 0 4.25rem 0 4.25rem;
-    line-height:1.5;
+    line-height:1.75;
     animation:fade-in;
     animation-duration:0.5s;
 }
