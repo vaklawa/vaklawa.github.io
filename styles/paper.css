@@ -1,14 +1,10 @@
-/* "paper" layout for poems & stories */
-
 :root{
     scrollbar-color:#ddd #101010;
 }
-
 @font-face{
     font-family:'Bitter';
     src:url("/assets/Bitter Regular/Bitter Regular.ttf")
 }
-
 @media screen and (max-width:800px){
     body{
         article{
@@ -58,7 +54,6 @@
         scrollbar-color:#bbb #ddd;
     }
 }
-
 @media screen and (max-width:800px) and (prefers-color-scheme:light){
     body{
         article{
@@ -70,17 +65,14 @@
         }
     }
 }
-
 a{
     font-family:'Bitter','Times New Roman', Times, serif;
 }
-
 header{
     position:sticky;
     top:0;
     z-index:10000;
 }
-
 article{
     margin-left:12.5rem;
     margin-right:12.5rem;
@@ -93,7 +85,6 @@ article{
     background-size:cover;
 }
 article h1{padding-top:2.5rem;}
-
 button{
     background-color:darkslateblue;
     color:#dedede;

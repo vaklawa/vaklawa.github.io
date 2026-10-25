@@ -1,5 +1,3 @@
-/* This stylesheet is used for styling poem text */
-
 @font-face{
     font-family:'JP Hand';
     src: url(/assets/jp_hand_slanted/JPHSL.TTF);
@@ -8,7 +6,6 @@
     font-family:'Journal';
     src:url(/assets/JOURNAL.TTF);
 }
-
 @keyframes fade-in{
     from{opacity:0;}
     to{opacity:1;}
@@ -24,7 +21,6 @@ body{
         a{color:purple;}
     }
 }
-
 @media screen and (max-width:800px){
     body{
         .general-nav ul{max-width:none;}
@@ -46,10 +42,7 @@ body{
         }
     }
 }
-
-/* Prevent navigation window from partially covering the text. */
 .general-nav ul{max-width:12.5rem;}
-
 p{
     font-family:'Times New Roman', Times, serif;
     font-size:1.2rem;
@@ -61,11 +54,9 @@ p{
 p.freestyle{
     white-space:pre;
 }
-
 a{
     color:plum;
 }
-
 h1{
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size:1.2rem;
@@ -73,12 +64,10 @@ h1{
     margin-bottom:1.25rem;
     font-style:bold;
 }
-
 span{
     animation:fade-in;
     animation-duration:0.5s;
 }
-
 span.default p{
     font-size:1.2rem;
     line-height:1.5;
@@ -101,5 +90,4 @@ span.hand h1{
     animation:fade-in;
     animation-duration:0.5s;
 }
-
 audio{display:none;}
