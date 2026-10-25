@@ -34,16 +34,13 @@
     }
 }
 
-/* General navigation window.
-Place on top left corner & fix width. */
+
 .general-nav{
     width:fit-content;
     position:fixed;
     left:0.0625rem;
     top:0;
 }
-.general-nav .nav-window-collapsed{display:none;}
-.general.nav .nav-window-content{display:flex;}
 .general-nav h1{
     font-family:'Courier New', Courier, monospace;
     font-size:1.2rem;
@@ -73,8 +70,6 @@ Place on top left corner & fix width. */
     &:hover{background-color:rgba(232, 141, 255, 0.25);}
 }
 
-/* Index. */
-/* This window is used as an index for blog posts that have sub-sections. */
 .index{
     margin:0;
     width:10rem;
@@ -104,7 +99,11 @@ Place on top left corner & fix width. */
 }
 .index ul li{line-height:1.625;}
 
-/* nav tag settings. */
+nav, .general-nav{
+    .nav-window-collapsed{display:none;}
+    .nav-window-content{display:flex;}
+}
+
 nav{
     border:0.1rem solid;
     border-color:rgb(54,45,112);
@@ -113,6 +112,17 @@ nav{
     overflow:hidden;
     background-color:#191919cb;
     backdrop-filter:blur(0.15rem);
+}
+nav h1{
+    font-family:'Courier New', Courier, monospace;
+    font-size:1.2rem;
+    font-weight: normal;
+    text-decoration:none;
+    margin:0;
+    padding-bottom:0;
+    padding-top:0.25rem;
+    padding-left:0.25rem;
+    padding-right:0.5rem;
 }
 nav hgroup{
     background-color:darkslateblue;

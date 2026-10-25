@@ -147,36 +147,6 @@ nav ul li a:hover{
 }
 .nav-window-content{display:flex;}
 .nav-window-collapsed{display:none;}
-nav{
-    border:0.1rem solid;
-    border-color:rgb(54,45,112);
-    border-radius:0.75rem;
-    box-shadow:0 0.25rem 0.25rem 0 rgba(0,0,0,0.2);
-    overflow:hidden;
-    background-color:#191919cb;
-    backdrop-filter:blur(0.15rem);
-}
-nav hgroup{
-    background-color:darkslateblue;
-    gap:0.25rem;
-    display:flex;
-    align-items:center;
-    justify-content:left;
-    border-bottom:0.1rem solid;
-    border-bottom-color:rgb(54,45,112);
-    margin:0;
-    padding-left:0.0625rem;
-    padding-right:0.1rem;padding-bottom:0.1rem;padding-top:0.1rem;
-}
-nav h1{
-    font-family:'Courier New', Courier, monospace;
-    font-size:1.2rem;
-    font-weight: normal;
-    text-decoration:none;
-    margin:0;
-    padding-bottom:0;
-    padding-top:0.25rem;padding-left:0.25rem;padding-right:0.5rem;
-}
 
 /* Contents list */
 .content-list{
