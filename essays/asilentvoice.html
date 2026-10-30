@@ -22,7 +22,32 @@
             }
         }
     </style>
-    <body>
+    <script>
+        function adaptEmbed(){
+            // Source - https://stackoverflow.com/a/57795495
+            // Posted by Mark Szabo, modified by community. See post 'Timeline' for change history
+            // Retrieved 2026-10-30, License - CC BY-SA 4.0
+            const darkModeMql = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)');
+            if (darkModeMql && darkModeMql.matches) {
+                // dark mode
+                console.log('dark mode detected');
+                let element=document.getElementById("embed");
+                element.setAttribute("src","https://embed.letterboxd.com/film/a-silent-voice-the-movie/embed-histogram/?theme=dark");
+            } else {
+                // light mode
+                console.log('light mode detected');
+                let element=document.getElementById("embed");
+                element.setAttribute("src","https://embed.letterboxd.com/film/a-silent-voice-the-movie/embed-histogram/?theme=light");
+            }
+        }
+        // Source - https://stackoverflow.com/a/57795495
+        // Posted by Mark Szabo, modified by community. See post 'Timeline' for change history
+        // Retrieved 2026-10-30, License - CC BY-SA 4.0
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            adaptEmbed();
+        });
+        </script>
+    <body onload="adaptEmbed()">
         <span id="inicio"></span>
         <header>
             <nav class="general-nav">
@@ -44,7 +69,7 @@
                 <p class="first-paragraph"><em>A Silent Voice</em> me dejó con cara de póquer cuando la vi por primera vez. No entendía cómo una película tan universalmente aclamada y querida, que ha cambiado tantas vidas, podía parecerme tan... <em>meh</em>. Había <em>algo</em> que me chirriaba, y no estuve segura de qué era (tan segura como para escribir un ensayo sobre ello, quiero decir) hasta que la vi otras dos veces y leí el <em>manga</em>.</p>
                 <aside>
                     <p>No exagero cuando digo que es una película querida.</p>
-                    <iframe src="https://embed.letterboxd.com/film/a-silent-voice-the-movie/embed-histogram/?theme=default" width="100%" height="auto" frameborder="0" scrolling="no"></iframe>
+                    <iframe id="embed" src="https://embed.letterboxd.com/film/a-silent-voice-the-movie/embed-histogram/?theme=default" width="100%" height="auto" frameborder="0" scrolling="no"></iframe>
                 </aside>
                 <p>Mi problema con <em>A Silent Voice</em> reside en el personaje de <strong>Shoko</strong>, la chica sorda a la que <strong>Shoya</strong>, el protagonista, odia y acosa en el colegio. Ella es la fuerza de cambio que lo empieza todo y el centro de gravedad la historia; uno esperaría que fuera co-protagonista, pero queda relegada a una posición secundaria.</p>
                 <p>Me molesta que no tenga vida más allá de su familia y su ex-torturador de la infancia. Me parece ridículo que, tanto en el <em>manga</em> como en la película, su círculo social, formado inicialmente sólo por su hermana, al final consista en ésta más:</p>
