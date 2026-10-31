@@ -23,29 +23,26 @@
         }
     </style>
     <script>
-        function adaptEmbed(){
+            function adaptEmbed(){
+                const element=document.getElementById("embed");
+                // Source - https://stackoverflow.com/a/57795495
+                // Posted by Mark Szabo, modified by community. See post 'Timeline' for change history
+                // Retrieved 2026-10-30, License - CC BY-SA 4.0
+                const darkModeMql = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)');
+                if (darkModeMql && darkModeMql.matches) {
+                    // dark mode
+                    element.setAttribute("src","https://embed.letterboxd.com/film/a-silent-voice-the-movie/embed-histogram/?theme=dark");
+                } else {
+                    // light mode
+                    element.setAttribute("src","https://embed.letterboxd.com/film/a-silent-voice-the-movie/embed-histogram/?theme=light");
+                }
+            }
             // Source - https://stackoverflow.com/a/57795495
             // Posted by Mark Szabo, modified by community. See post 'Timeline' for change history
             // Retrieved 2026-10-30, License - CC BY-SA 4.0
-            const darkModeMql = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)');
-            if (darkModeMql && darkModeMql.matches) {
-                // dark mode
-                console.log('dark mode detected');
-                let element=document.getElementById("embed");
-                element.setAttribute("src","https://embed.letterboxd.com/film/a-silent-voice-the-movie/embed-histogram/?theme=dark");
-            } else {
-                // light mode
-                console.log('light mode detected');
-                let element=document.getElementById("embed");
-                element.setAttribute("src","https://embed.letterboxd.com/film/a-silent-voice-the-movie/embed-histogram/?theme=light");
-            }
-        }
-        // Source - https://stackoverflow.com/a/57795495
-        // Posted by Mark Szabo, modified by community. See post 'Timeline' for change history
-        // Retrieved 2026-10-30, License - CC BY-SA 4.0
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-            adaptEmbed();
-        });
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+                adaptEmbed();
+            });
         </script>
     <body onload="adaptEmbed()">
         <span id="inicio"></span>
