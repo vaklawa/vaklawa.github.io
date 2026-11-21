@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link rel="stylesheet" href="/styles/style.css">
+        <link rel="stylesheet" href="/styles/navwindows.css">
+        <link rel="icon" href="/assets/favicon.ico">
+        <title>La Cueva de las Hadas | Filtrar por tema☆</title>
+        <meta name="description" content="A personal website made from scratch, where I post my own poems, stories and intense texts.">
+        <meta name="author" content="vaklawa (https://github.com/vaklawa)">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <style>
+        #tagsList{
+            display:flex;
+            justify-content:center;
+            gap:1.625rem;
+        }
+        #tagsList li::marker{content:none;}
+        #matchingContentsList{
+            display:block;
+            margin:1.625rem;
+        }
+        #matchingContentsList li::marker{content:'⭑';font-size:1.25rem;}
+        #tagsList button{
+            border:none;
+            background:none;
+            padding:0.25rem;
+            border-radius:1rem;
+        }
+        #tagsList button:hover{background-color:#66666677;}
+        #tagsList .selected{
+            background-color:#66666677;
+            font-weight:bold;
+            text-decoration:underline;
+            text-decoration-thickness:0.2rem;
+            text-decoration-skip-ink:none;
+            color:rgb(197, 232, 197);
+        }
+        @media screen and (prefers-color-scheme:light){#tagsList .selected{background-color:#11111177;}}
+    </style>
+    <body onload="fetchTags();fetchTranslations();">
+        <header>
+            <nav>
+                <hgroup><button onclick="collapseNavWindow()">_</button><button onclick="expandNavWindow()">□</button><h1>Navegación de la página</h1></hgroup>
+                <ul id="topnav" class="nav-window-content">
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="/historias">Historias</a></li>
+                    <li><a href="/poemas">Poemas</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/essays">Ensayos</a></li>
+                    <li><a href="/about.html">Más información</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1></h1>
+            <section>
+                <h1>Filtrar contenidos por tema</h1>
+                <p class="first-paragraph">¡Puedes filtrar los contenidos de esta web por tema! Selecciona los temas que te interesen y más abajo encontrarás los enlaces a los textos correspondientes.</p>
+                <p>(la búsqueda funciona como un OR)</p>
+                <p><button onclick="translateTags('es')">Ver en español</button></p>
+                <p><button onclick="translateTags('en')">Ver en inglés</button></p>
+                <p><button onclick="resetSelection()">Borrar selección</button></p>
+                <p><ul id="tagsList"></ul></p>
+                <p><ul id="matchingContentsList"></ul></p>
+            </section>
+        </main>
+        <footer>
+            <p><a href="#">Volver arriba</a></p>
+            <p>CSS and site contents (poems, texts, drawings, etc.) are protected by copyright© law.</p>
+        </footer>
+        <script src="/script.js"></script>
+        <script src="/tools/tags/tags.js"></script>
+    </body>
+</html>
