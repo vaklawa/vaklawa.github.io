@@ -1,7 +1,6 @@
 let favs = localStorage.getItem("favs") === null ? [] : localStorage.getItem("favs");
 //console.log("favs list retrieved");console.log(favs);
 let favsObj = favs.length === 0 ? [] : (favs.length === 1 ? JSON.parse("["+favs+"]") : JSON.parse(favs));
-//console.log("favs list JSON parsed");console.log(favsObj);
 let isAlreadyAdded = false;
 for (let i=0;i<favsObj.length;i++){
     if (favsObj[i].url === document.URL) {
@@ -9,7 +8,15 @@ for (let i=0;i<favsObj.length;i++){
         break;
     }
 }
-//console.log("document already added to favs?");console.log(isAlreadyAdded);
+console.log("already added?",isAlreadyAdded);
+if (isAlreadyAdded){
+    let element = document.getElementsByClassName("favsButton")[0];
+    let onclickString = element.getAttribute("onclick");
+    element.setAttribute("onclick",onclickString.replace("addToFavs","removeFromFavs"));
+}
+
+console.log(favs);
+console.log(favsObj);
 
 function addToFavs(title){
     if (isAlreadyAdded) {
@@ -33,7 +40,7 @@ function removeFromFavs(title){
             favsObj.splice(i,1);
             favs = JSON.stringify(favsObj);
             localStorage.setItem("favs",favs);
-            console.log("removed ",favsObj[i].title," from favs");
+            console.log("removed ",title," from favs");
             isAlreadyAdded = false;
             break;
         }
