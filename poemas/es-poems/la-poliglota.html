@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="/styles/paper.css">
+    <link rel="stylesheet" href="/styles/poems.css">
+    <link rel="stylesheet" href="/styles/navwindows.css">
+    <title>Poemas | La Políglota</title>
+    <link rel="icon" href="/assets/poem-icon.ico">
+    <meta name="description" content="A poem titled 'La Políglota'.">
+    <meta name="author" content="vaklawa (https://github.com/vaklawa)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body onload="paperSoundEffect()">
+    <audio id="paper-sound"><source src="/assets/215743__supersnd__turning-page-2.wav"></audio>
+    <audio id="paper-sound2"><source src="/assets/428665__jomse__pickupbook2.wav"></audio>
+    <header>
+        <nav class="general-nav">
+            <hgroup><button onclick="collapseNavWindow()">_</button><button onclick="expandNavWindow()">□</button><h1>Opciones</h1></hgroup>
+            <ul id="topnav" class="nav-window-content">
+                <li><a href="/poemas/#lista-es">Volver</a></li>
+                <li><a href="este-trasgo.html">Anterior</a></li>
+                <li><a href="luna-creciente.html">Siguiente</a></li>
+                <li><button onclick="changeFont()">Cambiar estilo</button></li>
+                <li><button class="favsButton"; onclick="addToFavs('La Políglota')"></button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <span id="poem" class="default">
+                <h1>La Políglota</h1>
+                <p>Me pusieron de nombre Babel<br>Qué ironía.</p>
+                <p>Colecciono lenguas<br>Que llenan mi mundo<br>Como pompas de colores,<br>Lustrosos globos;</p>
+                <p>Mira dentro de mí<br>Y verás cómo se apiñan<br>Como adorables gatitos<br>En las esquinas de mi cerebro:</p>
+                <p>El árabe y sus hermanos,<br>El persa y el uzbeko,<br>El chino mandarín, el japonés y el coreano,<br>El catalán, el francés,<br>El corso, el ocitano,<br>El euskera, el portugués,<br>El maltés y el siciliano.</p>
+                <p>Me pusieron de nombre Alif<br>Porque soy delgada como ella;<br>Me alimento de los poemas que encuentro<br>Y de las cartas de amor que envío<br>A todos los rincones del planeta<br>Y que nadie contesta.</p>
+                <p>Diez mil alfabetos en mi estantería,<br>El hombre que visita mi apartamento<br>No da cŕedito:<br>¡De dónde eres!<br>Le contesto:</p>
+                <p>De donde quieras,<br>Mi idioma preferido es el que quieras<br>Como mi  nombre<br>Y mi grupo étnico;</p>
+                <p>Cambiaformas,<br>Cambiapieles,<br>Cambialenguas<br>Puedo ser más de aquí<br>Y también más extranjera;</p>
+                <p>Puedo ser más de todo,<br>Serlo todo<br>Y más, y más.</p>
+            </span>
+        </article>
+    </main>
+    <footer></footer>
+    <script src="/script.js"></script>
+    <script src="/tools/favs/favs.js"></script>
+</body>
+</html>

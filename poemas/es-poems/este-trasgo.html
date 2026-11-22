@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="/styles/paper.css">
+    <link rel="stylesheet" href="/styles/poems.css">
+    <link rel="stylesheet" href="/styles/navwindows.css">
+    <title>Poemas | Este Trasgo</title>
+    <link rel="icon" href="/assets/poem-icon.ico">
+    <meta name="description" content="A poem titled 'Este Trasgo'. It's about a green goblin which is a metaphor for like self-loathing or something like that.">
+    <meta name="author" content="vaklawa (https://github.com/vaklawa)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body onload="paperSoundEffect()">
+    <audio id="paper-sound"><source src="/assets/215743__supersnd__turning-page-2.wav"></audio>
+    <audio id="paper-sound2"><source src="/assets/428665__jomse__pickupbook2.wav"></audio>
+    <header>
+        <nav class="general-nav">
+            <hgroup><button onclick="collapseNavWindow()">_</button><button onclick="expandNavWindow()">□</button><h1>Opciones</h1></hgroup>
+            <ul id="topnav" class="nav-window-content">
+                <li><a href="/poemas/#lista-es">Volver</a></li>
+                <li><a href="el-gato-negro.html">Anterior</a></li>
+                <li><a href="la-poliglota.html">Siguiente</a></li>
+                <li><button onclick="changeFont()">Cambiar estilo</button></li>
+                <li><button class="favsButton"; onclick="addToFavs('Este Trasgo')"></button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <span id="poem" class="default">
+                <h1>Este Trasgo</h1>
+                <p>Este trasgo verde y venenoso<br>Que corretea de un lado a otro,<br>Que gruñe como un cerdo,<br>Que rompe y pisotea con desprecio<br>Todas las cosas bonitas que encuentra,<br>Todo lo que yo creía eterno<br>E incorruptible,</p>
+                <p>Nació de mí.<br>Nunca creí que algo tan vil<br>Pudiera vivir en mi cuerpo<br>Pero helo ahí.</p>
+                <p>¿He de honrarlo hasta que muera<br>O cómo funciona esto?</p>
+                <p>No sé qué hacer con esta sensación de decepción tan amarga,</p>
+                <p>Esta bilis negra que me hace charcos bajo la piel,</p>
+                <p>Este cementerio de luciérnagas y hadas,<br>El huerto frutal de cristal roto...</p>
+            </span>
+        </article>
+    </main>
+    <footer></footer>
+    <script src="/script.js"></script>
+    <script src="/tools/favs/favs.js"></script>
+</body>
+</html>
