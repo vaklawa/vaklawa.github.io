@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link rel="stylesheet" href="/styles/style.css">
+        <link rel="stylesheet" href="/styles/navwindows.css">
+        <link rel="icon" href="/assets/favicon.ico">
+        <title>La Cueva de las Hadas | Tus favoritos ☆</title>
+        <meta name="description" content="A personal website made from scratch, where I post my own poems, stories and intense texts.">
+        <meta name="author" content="vaklawa (https://github.com/vaklawa)">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <style>
+        #favsList li::marker{
+            content:'❤︎';
+        }
+        #favsList{
+            display:block;
+            margin:0.625rem 1.625rem 0.625rem 2.625rem;
+        }
+        h2{
+            text-align:center;
+            font-family:'JP Hand';
+            font-size:2.25rem;
+            margin-bottom:0.625rem;
+        }
+        .favsArea{
+            background-image:url("assets/paper-background.jpg");
+            margin:0.25rem;
+        }
+        hr{
+            border:none;
+            height:auto;
+            margin-top:1.625rem;
+            margin-bottom:1.625rem;
+            text-align:center;
+            &::after{
+                content:'𓂃˖˳·˖ ִֶָ❤˖˳·˖ ִֶָ ⋆♡⋆ ִֶָ˖·˳˖ ❤︎˖˳·˖ ִֶָ𓂃';
+                letter-spacing:0.25rem;
+            }
+        }
+    </style>
+    <body onload="listFavs()">
+        <header>
+            <nav>
+                <hgroup><button onclick="collapseNavWindow()">_</button><button onclick="expandNavWindow()">□</button><h1>Navegación de la página</h1></hgroup>
+                <ul id="topnav" class="nav-window-content">
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="/historias">Historias</a></li>
+                    <li><a href="/poemas">Poemas</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/essays">Ensayos</a></li>
+                    <li><a href="/about.html">Más información</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1></h1>
+            <section>
+                <h1>Favoritos</h1>
+                <p>Si alguno de los textos de esta web te gusta especialmente, puedes añadirlo a favoritos pulsando el botón ❤︎ y el enlace aparecerá en esta página.</p>
+                <p>Los datos se almacenan localmente en tu navegador.</p>
+                <hr>
+                <h2>Textos guardados</h2>
+                <p><ul id="favsList"></ul></p>
+                <hr>
+                <p><button onclick="clearFavs();listFavs();">Borrar todo</button></p>
+            </section>
+        </main>
+        <footer>
+            <p><a href="#">Volver arriba</a></p>
+            <p>CSS and site contents (poems, texts, drawings, etc.) are protected by copyright© law.</p>
+        </footer>
+        <script src="/script.js"></script>
+        <script src="/tools/favs/favs.js"></script>
+    </body>
+</html>

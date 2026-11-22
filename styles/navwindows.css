@@ -132,3 +132,12 @@ nav hgroup button{
     padding:0 0.5rem 0.125rem 0.5rem;
     border-radius:0.5rem;
 }
+.favsButton{
+    font-size:1.825rem;
+    padding:0.125rem 0.525rem 0 0.525rem;
+    border:none;
+    border-radius:10rem;
+}
+.favsButton::after{
+    content:'❤︎';
+}
